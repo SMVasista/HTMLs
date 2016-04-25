@@ -65,5 +65,21 @@ Proof: 1 The c(xi) is ~ <C> for the condition that xi (i in 1,30) is equal
     
     <C>node_global = Fn^3/sum(Fn)^3 * 100
     
-    <C(xi)> = 
+    del(G) = G' - G where, G' represents the state where x(i) becomes 0
+    
+    del(G) = [ ((0.9)^3 + 1^3 + 1^3)/((1^3) + 1^3+ 1^3)) -1 ]* 100 = 2.792/3 - 1 * 100 ~ 6.93% which is closer to 10% of the initial <C(xi)> and the 
+        amplification ration r = <C(xi)> / C(xi) = 6.93/3.33 ~ 2.08x
+        
+        
+    Therefore it follows, for higher amplifications n = 4,5,6...
+    
+    del(G) = [ ((0.9)^4 + 1^4 + 1^4)/((1^4) + 1^4+ 1^4)) -1 ]* 100 = 2.656/3 -1 * 100 ~ 11.46% and
+            r = 11.46/3.33 ~ 3.44x
+            
+Proof 2 : The classical F function and the amplified G function vary quasi-leniarly with each other.
+
+    It clearly follows that F = sum(xi) which in terms of the partial sums = sum(xi)/(sum(xi)) = 1
+    Hence it follows, that G = sum(Fn) = sum(xi)^3/(sum(x^3)) = 1. Hence the two functions approach the same values for
+    increasing values of x(i)
+    
     
