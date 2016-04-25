@@ -1,0 +1,69 @@
+PSA - Partial Signal Amplification
+
+To define a complex function composed as the sum of individial sub-functions. The average response (or global response) of the 
+function can still hold true in the process of defining the complex function to change exponentailly and periodically is the condition
+that the function generally gives a linear output for every perturbation of the individual variables. 
+The global response is still restrained since the contribution of all the sub-functions vary exponentially while, 
+making the global function quasi-linear.
+
+Suppose F(x1,x2,x3,x4,x5,x6,x7...x30) is the global function where xi sub-function is defined as :
+
+    xi = [k1i . s_xi/(k2i + s_xi)]
+  
+and the F = sum(xi) (i = 1,30 in the above case)
+  
+The fraction of xi sub-function on the global function is :
+  
+    c(xi) = xi/sum(xi) * 100 (in percentage)
+  
+Then, the average maximum for the functions set (maximizing c(xi) for i 1,30 in F=1F) : 1/i * 100
+
+Which is for 30 sub-functions : 1/30 * 100 ~ 3.33% for any value of F (F' ~ 1000F also)
+
+The objective is the increase the average maximum in the ideal case where the fraction of all sub-functions are equally
+distributed.
+
+define the following parameters: 
+    
+    <C> which is the average maximum fraction we need to achieve for the sub-functions
+    n = number of nodes the F has to be divided to achieve the fraction
+    I = Total number of sub-functions
+    
+So, n = I/<C>
+    
+    F' = sum(G(Fj) j in 1 to n)
+    Fn = sum(xi) i in (n.I)
+    
+    G(Fj) = (Fj^n)
+    
+Illustration 1: For the above example of 30 sub-functions forming F,
+
+  C ~ 3.33%
+  Let the new <C> be = 10% ( <c> = 10 )
+
+Hence, n = 30/10 = 3
+functions per node h = 30/3 = 10
+
+  F1 = sum(xi) i in 1,10
+  F2 = sum(xi) i in 11,20
+  F3 = sum(xi) i in 21,30
+
+F' = sum(G(Fj)) = G(F1) + G(F2) + G(F3)
+    = F1^3 + F2^3 + F3^3
+    = (sum(xi))^3 + (sum(xj))^3 + (sum(xk))^3
+    
+Proof: 1 The c(xi) is ~ <C> for the condition that xi (i in 1,30) is equal
+
+    Given that c(xi) is defined as xi/sum(xi) * 100, replace xi with xi^3
+    
+    for x(i) in node n, the average maximum of n is <C>node_local = xi/sum(xi)% = 1/10 * 100 = 10%
+    
+    therefore, for the function, F the <C(xi)> = <C>node_local * <C>node_global, where,
+    
+    <C>node_local = <C(xi)> and
+    <C>node_global = fraction of node into the main function
+    
+    <C>node_global = Fn^3/sum(Fn)^3 * 100
+    
+    <C(xi)> = 
+    
