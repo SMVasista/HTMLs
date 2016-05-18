@@ -4779,6 +4779,55 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 
+.btn_spl1 {
+  width: 175px;
+  color: #ffffff;
+  font-size: 25px;
+  background: #307d6a;
+}
+
+.btn_spl1:hover {
+  background: #46a681;
+  text-decoration: none;
+}
+
+.btn_spl2 {
+  width: 175px;
+  color: #ffffff;
+  font-size: 25px;
+  background: #6666ff;
+}
+
+.btn_spl2:hover {
+  background: #a4dde3;
+  text-decoration: none;
+}
+
+.btn_spl3 {
+  width: 175px;
+  color: #ffffff;
+  font-size: 25px;
+  background: #40bf40;
+}
+
+.btn_spl3:hover {
+  background: #99e699;
+  text-decoration: none;
+}
+
+.btn_spl4 {
+  width: 175px;
+  color: #ffffff;
+  font-size: 25px;
+  background: #4d4d00;
+}
+
+.btn_spl4:hover {
+  background: #666600;
+  text-decoration: none;
+}
+
+
 .navibar_custom {
  width: 100%;
  height: 75px;
@@ -4818,6 +4867,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
  text-align: justify;
  color: grey;
 }
+
+.image_holder {
+ width: 100%;
+ height: auto;
+ padding: 2px 2px 2px 2px;
+ text-align: center;
+}
+
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
