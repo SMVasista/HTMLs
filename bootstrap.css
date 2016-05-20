@@ -4780,10 +4780,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .btn_spl1 {
-  width: 175px;
+  width: 100%;
   color: #ffffff;
   font-size: 25px;
-  background: #307d6a;
+  background: #006666;
 }
 
 .btn_spl1:hover {
@@ -4792,22 +4792,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .btn_spl2 {
-  width: 175px;
+  width: 100%;
   color: #ffffff;
   font-size: 25px;
-  background: #6666ff;
+  background: #6C8EBF;
 }
 
 .btn_spl2:hover {
-  background: #a4dde3;
+  background: #99CCFF;
   text-decoration: none;
 }
 
 .btn_spl3 {
-  width: 175px;
+  width: 100%;
   color: #ffffff;
   font-size: 25px;
-  background: #40bf40;
+  background: #82B366;
 }
 
 .btn_spl3:hover {
@@ -4816,17 +4816,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .btn_spl4 {
-  width: 175px;
+  width: 100%;
   color: #ffffff;
   font-size: 25px;
-  background: #4d4d00;
+  background: #666600;
 }
 
 .btn_spl4:hover {
-  background: #666600;
+  background: #A1A100;
   text-decoration: none;
 }
-
 
 .navibar_custom {
  width: 100%;
@@ -4849,7 +4848,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .main_container {
  width: 90%;
- height: 90%;
+ height: auto;
  margin-right: auto;
  margin-left: auto;
  margin-top: auto;
@@ -4869,8 +4868,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .image_holder {
- width: 100%;
+ width: 80%;
  height: auto;
+ margin-right: auto;
+ margin-left: auto;
+ margin-top: auto;
+ margin-bottom: auto;
  padding: 2px 2px 2px 2px;
  text-align: center;
 }
